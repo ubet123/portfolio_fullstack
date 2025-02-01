@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <div class="nav-container">
+            <div class="my-name">Serene.</div>
+            <div class="responsive-hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-but responsive-nav">
+                <a href="#"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </div>
+
+        <div class="intro block">
+            <div class="role mobile-role">Front-end Developer</div>
+            <div class="main-name mobile-main-name">
+                <!--Hi, I'm <span>Serene</span>
+                <p>Welcome!!</p>-->
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="about block" id="about">
+        <div class="my-img block my-img1 mobile-my-img"><img src="Serene passport size.jpg"></div>     
+        <div class="about-me block mobile-about-me">
+            <h2>About Me</h2>
+            <p>
+                B.E. Computer Engineering student at Fr. Conceicao Rodrigues College of Engineering, passionate about frontend development and UI/UX design.</p><br> Proficient in  <span class="keywords">React</span> ,<span class="keywords"> TypeScript </span>,<span class="keywords"> Tailwind CSS</span>, and <span class="keywords">JavaScript</span>, with experience in building responsive, user-friendly web applications. 
+    
+                <br> Having worked on projects like <span class="keywords">WorkSync</span> , <span class="keywords">FlickHive</span> , and <span class="keywords">BharatSecure</span>, I excel in collaborative environments and thrive under pressure. Continuously learning, I aim to contribute to impactful web development projects.
+            </p>
+    
+            <ul class="skills-list block mobile-skills-list">
+                <li>Skills</li>
+            </ul>
+            <div class="skills-list-content block mobile-skills-list-content">
+                <h3>Frontend:</h3> <p> React.js , JavaScript , TypeScript , HTML5 , CSS3 , Tailwind CSS , Bootstrap</p>  
+                <h3>Programming Languages:</h3> <p>C, C++ ,Python</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <h2 class="project-title" id="projects">My Projects</h2>
+<div class="work-cards block" id="work-cards">
+    
+    <!-- Project 1 -->
+    <div class="card1 mobile-card">
+        <img class="card-img card-img-fit" src="freepik__expand__13208.png">
+        <div class="card1-label">
+            <h2>FlickHive</h2>
+            <p>The Favorite Movies/TV Shows Tracker lets users manage and filter their favorite movies and TV shows by genre. It includes dark mode and stores preferences using local storage for a seamless experience.</p>
+            <a href="https://flick-hive-yg8z.vercel.app/"><i class='bx bx-link-alt'></i></a>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card1 mobile-card">
+        <img class="card-img card-img-fit" src="freepik__expand__20459.png">
+        <div class="card1-label">
+            <h2>WorkSync</h2>
+            <p>A platform for task tracking, performance monitoring, and role-based access, with real-time updates and admin dashboards for seamless workflows.</p>
+            <a href="https://sereneproject.vercel.app/"><i class='bx bx-link-alt'></i></a>
+        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="card1 mobile-card">
+        <img class="card-img card-img-fit" src="freepik__expand__7488.png">
+        <div class="card1-label">
+            <h2>BharatSecure</h2>
+            <p>My team and I are developing BharatSecure, a website for incident reporting and response, focused on Women and Child Safety, featuring real-time reporting, heatmaps, and emergency notifications to improve public safety.</p>
+            <a href="https://github.com/Shane-Dias/TechFiesta25"><i class='bx bx-link-alt'></i></a>
+        </div>
+    </div>
+
+</div>
+
+    
+    
+
+<div class="contact block" id="contact">
+    <div class="contact-left block mobile-contact">
+        <h1>Contact Me</h1>
+        <div class="details block">
+            <i class='bx bx-envelope'></i><span>dmelloserene08@gmail.com</span>
+        </div>
+        <div class="details block">
+            <i class='bx bx-phone'></i><span>9309271710</span>
+        </div>
+        <div class="socials block">
+            <a href="https://github.com/ubet123"><i class='bx bxl-github'></i> </a>
+            <a href="https://www.linkedin.com/in/serene-dmello-572605344/">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+        </div>
+        <a href="Serene-resume-final-2.pdf" download>
+            <div class="cv-but">Download CV</div>
+        </a>
+    </div>
+    <div class="contact-right block mobile-contact">
+        <form>
+            <input type="text" id="name" name="Name" required placeholder="Your Name">
+            <input type="email" id="e-mail" name="Email" required placeholder="Your E-mail">
+            <textarea id="message" rows="6" name="Message" required placeholder="Your Message"></textarea>
+            <div class="subtn" onclick="submitdis()">Submit</div>
+        </form>
+    </div>
+</div>
+
+
+<div class="footer">
+    Copyright © Serene
+</div>
+    
+</body>
+</html>

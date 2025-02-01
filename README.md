@@ -1,2 +1,2 @@
-# portfolio_fullstack
-portfolio for fullstack exp 1
+# MyPortfolio
+Link to my Portfolio: https://ubet123.github.io/MyPortfolio/

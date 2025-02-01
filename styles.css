@@ -1,0 +1,821 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+
+}
+
+body{
+    background-color: #080808;
+    color:white;
+}
+
+#header{
+    width:100%;
+    height:100vh;
+    background-image: url(wallpaperflare.com_wallpaper\ \(3\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.my-name::first-letter{
+    font-size: 3rem;
+    font-weight: 800;
+    color: yellow;
+
+}
+
+.my-name{
+    font-size: 3rem;
+    color:white;
+    font-weight: 800;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.7rem;
+    margin-bottom: 2rem;
+    background-color: rgba(3, 3, 3, 0.966);
+    width: 100%;
+    padding-left: 3.5rem;
+    padding-right: 10.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
+   
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.nav-but{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    gap:2rem;
+   font-size: 1.3rem;
+    font-weight: 600;
+    
+}
+
+.nav-but li{
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-but li::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0; 
+    height: 3.1px; 
+    background:yellow; 
+    transition: width 0.4s ease-in-out; 
+    border-radius: 2.8rem;
+}
+
+
+.nav-but li:hover::after {
+    width: 100%; 
+}
+
+.intro{
+    position: absolute;
+    left:9rem;
+    top:13rem;
+}
+
+.role{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.main-name{
+    font-size: 4rem;
+    padding-top: 1.3rem;
+    font-weight: 800;
+    color: yellow;
+}
+
+
+
+.main-name::after{
+    content: '';
+    position: absolute;
+    top:50px;
+    bottom:30px;
+    right:50px;
+    left:60px;
+    font-size: 2rem;
+    animation-name: animatingtext;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.6s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out
+    animation-fill-mode: forwards
+   }
+   @keyframes  animatingtext{
+    10% {content: 'Hi|';}
+    20%{content: "Hi, I'm|";}
+    40%{content: "Hi, I'm Se |";}
+    60%{content: "Hi, I'm Sere |";}
+    85%{content: "Hi, I'm Serene |";}
+    90%{content: "Hi, I'm Serene We |";}
+    95%{content: "Hi, I'm Serene Welco |";}
+    97%{content: "Hi, I'm Serene Welcome |";}
+
+    100%{content: "Hi, I'm Serene Welcome...|";}
+    
+}
+
+
+.main-name span{
+    color:yellow
+}
+
+.main-name p{
+    padding-top: 1.3rem;
+}
+
+.about{
+    color:white;
+    padding: 5rem;
+    
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:2rem;
+    margin-bottom: 7rem;
+}
+
+.about img{
+    width:20rem;
+    height: 26rem;
+    border-radius: 1rem;
+}
+
+.about ul{
+    list-style-type: none;
+}
+
+.about-me{
+    width:42rem;
+}
+
+.about-me h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: yellow;
+    
+}
+
+.skills-list{
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:19rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+   
+}
+
+.skills-list li{
+    position: relative;
+    cursor: pointer;
+}
+
+.skills-list li::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0; 
+    height: 3.1px; 
+    background:yellow; 
+    transition: width 0.4s ease-in-out; 
+    border-radius: 2.8rem;
+}
+
+
+.skills-list li:hover::after {
+    width: 100%; 
+}
+
+.skills-list-content{
+    padding-top: 1rem;
+}
+
+.skills-list-content h3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: yellow;
+}
+
+/* For layer :
+background : linear-gradient (rgba(0,0,0,0.6),#ff004f);
+*/
+
+.mywork{
+    margin-left: 8rem;
+    margin-top: 3rem;
+}
+
+.mywork h1{
+    font-size: 4rem;
+    font-weight: 1000;
+}
+
+.work-cards .card-img{
+    width:100%;
+    height: 100%;
+    display: block;
+    transition: all 0.4s ease;
+   cursor: pointer;
+
+}
+
+.work-cards{
+    overflow: hidden;
+    margin-top: 3rem;
+    cursor: pointer;
+    margin-left: 7rem;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Adjust the gap between cards */
+  padding: 10px;
+}
+
+.card1:hover .card-img{
+    transform: scale(1.5);
+    border-radius: 10px;
+}
+
+.card1{
+    overflow: hidden;
+    border-radius: 10px;
+    height:18rem;
+    width:17rem;
+    position: relative;
+}
+
+.card1-label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding:0px 30px;
+    background : linear-gradient(rgba(0,0,0,0.6),#ff004f);
+   width:100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+
+.work-cards .bx{
+    margin-top: 1.3rem;
+    background-color: black;
+    width:3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+
+.work-cards .bx:hover{
+    border: 4px solid white;
+}
+
+
+.card1:hover .card1-label{
+    height: 100%;
+   
+}
+
+.card2:hover .card-img{
+    transform: scale(1.5);
+    border-radius: 10px;
+}
+
+.card2{
+    overflow: hidden;
+    border-radius: 10px;
+    height:18rem;
+    width:17rem;
+    position: relative;
+}
+
+.card2-label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding:0px 30px;
+    background : linear-gradient(rgba(0,0,0,0.6),#ff004f);
+   width:100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.card2:hover .card2-label{
+    height: 100%;
+   
+}
+
+.work-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* From Uiverse.io by abrahamcalsin */ 
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: black;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    margin:3rem auto;
+    border:1px solid yellow;
+    font-weight: 700;
+  }
+  
+  button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #ffd401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+  }
+  
+  button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  
+  button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover span {
+    color: black;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0.95);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+
+
+  .contact{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .contact-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+  }
+
+
+.bxl-github{
+    margin-left: 1.2rem;
+}
+
+
+
+  .contact-left .bx{
+    color: yellow;
+    margin-right: 0.7rem;
+    font-size: 1.4rem;
+   
+  }
+
+  .details{
+    margin-top: 1.5rem;
+  }
+ 
+  .socials .bx{
+    font-size: 1.7rem;
+ color:gray;
+ cursor: pointer;
+ transition: all 0.4s;
+ margin-top: 2rem;
+  }
+
+  .socials .bx:hover{
+    color:yellow;
+    transform: translateY(-5px);
+  }
+
+  .cv-but{
+    background-color: yellow;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 9rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 6px;
+    color: black;
+    font-weight: 700;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.4s;
+    
+  }
+
+  .cv-but:hover{
+    transform: translateY(-5px);
+    background-color: rgb(173, 173, 13);
+  }
+
+  .contact-left a{
+    text-decoration: none;
+  }
+
+  .contact-right{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #name{
+    width:26rem;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(61, 59, 59);
+    color: white;
+    margin-bottom: 1.6rem;
+  }
+
+  #name::placeholder{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(172, 164, 164);
+  }
+
+  #e-mail::placeholder{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(172, 164, 164);
+  }
+
+  #message::placeholder{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(172, 164, 164);
+  }
+
+
+  #e-mail{
+    width:26rem;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(61, 59, 59);
+    color: white;
+    margin-bottom: 1.6rem;
+  }
+  
+  #message {
+    
+    padding: 10px; /* Adjust padding to control text positioning */
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(61, 59, 59);
+    color: white;
+    margin-bottom: 1.6rem;
+   
+    text-align: left; /* Aligns text horizontally */
+    box-sizing: border-box;
+    
+    line-height: 1.2; /* Adjust line-height for better readability */
+    vertical-align: top; /* Ensures the text is aligned to the top */
+    resize: none; /* Optional: Prevents the user from resizing the input */
+}
+
+
+.subtn{
+   padding-top: 9px;
+   padding-bottom: 9px;
+   padding-left: 45px;
+   padding-right: 20px;
+    color: black;
+    background-color: yellow;
+    width: 9rem;
+    border-radius: 7px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.subtn:hover{
+    background-color: white;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(82, 81, 81);
+    padding-top: 10px;
+    margin-top: 2rem;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.nav-but a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.keywords{
+    color: yellow;
+    font-weight: 800;
+}
+
+.project-title{
+    margin-left: 7rem;
+    font-size: 3rem;
+    color: yellow;
+}
+
+
+.card-img-fit {
+    width: 100%;       /* Makes the image fill the width of the container */
+    height: 100%;      /* Makes the image fill the height of the container */
+    object-fit: cover; /* Ensures the image maintains aspect ratio while filling the container */
+    object-position: center; /* Centers the image */
+}
+
+
+.my-img1 {
+    position: relative;
+    display: inline-block;
+    width: 20rem; /* Set a fixed width */
+    height: 25rem; /* Set a fixed height */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure the image stays within the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transformations */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Initial light shadow */
+    background-color: yellow; /* White background for the card */
+    padding: 10px; /* Add some padding to create spacing around the image */
+    cursor: pointer;
+}
+
+.my-img1 img {
+    width: 100%; /* Ensures image fits the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 10px; /* Rounded corners for the image */
+    transition: filter 0.3s ease; /* Smooth transition for image filter */
+}
+
+.my-img1:hover {
+    transform: translateY(-10px) scale(1.05); /* The card lifts up and slightly scales up */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.my-img1:hover img {
+    filter: brightness(1.2) saturate(1.1); /* The image becomes slightly brighter and more saturated */
+}
+
+
+.responsive-nav {
+    display: flex;
+}
+.responsive-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.responsive-hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 94px;
+}
+
+@media screen and (max-width: 768px) {
+    .responsive-nav {
+        display: none;
+    }
+    .responsive-hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-role {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .mobile-main-name {
+        font-size: 24px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-name span {
+        font-weight: bold;
+    }
+    .intro{
+        margin-left: -70px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    /* Adjust flex container for mobile */
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Style for the image */
+    .mobile-my-img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust About Me section for mobile */
+    .mobile-about-me {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Skills section adjustments */
+    .mobile-skills-list {
+        text-align: center;
+    }
+
+    .mobile-skills-list-content h3,
+    .mobile-skills-list-content p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .work-cards {
+        grid-template-columns: 1fr; /* Stack cards in one column */
+        gap: 15px;
+        margin-left: 20px;
+    }
+
+    .mobile-card {
+        /* Add some padding to each card in mobile view for spacing */
+        padding: 40px;
+    }
+
+    .card-img {
+        height: 150px; /* Reduce the image height on smaller screens */
+    }
+
+    .card1-label h2 {
+        font-size: 1.2rem; /* Smaller title on mobile */
+    }
+
+    .card1-label p {
+        font-size: 0.9rem; /* Smaller paragraph text on mobile */
+    }
+    .project-title{
+        margin-left: 60px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack the contact sections vertically on mobile */
+        padding: 20px;
+        margin-left: 50px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex: none;
+        width: 100%;
+    }
+
+    .details {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 0px;
+    }
+
+    .socials a {
+        margin-right: 15px;
+    }
+
+    .cv-but {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-right form {
+        padding: 10px;
+    }
+    
+    /* Adjust form inputs and buttons on smaller screens */
+  
+
+    .subtn {
+        width: 100%;
+        text-align: center;
+    }
+
+    #name{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+    #e-mail{
+        width:200px;
+        margin-left: -10px;
+    }
+
+    #message{
+        margin-left: -10px;
+        width:150px;
+    }
+    .socials .bx{
+        margin-top: 20px;
+    }
+}
